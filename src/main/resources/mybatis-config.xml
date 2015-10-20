@@ -21,7 +21,7 @@
         <typeAlias alias="TagDO" type="com.leo.dataobject.TagDO"/>
     </typeAliases>
 
-    <mappers>
-        <mapper resource="mapper/TagMapper.xml"/>
-    </mappers>
+    <!--<mappers>-->
+        <!--<mapper resource="mapper/TagMapper.xml"/>-->
+    <!--</mappers>-->
 </configuration>
