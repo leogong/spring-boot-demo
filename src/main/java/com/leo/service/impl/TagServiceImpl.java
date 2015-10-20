@@ -9,6 +9,8 @@ import com.leo.dao.TagMapper;
 import com.leo.dataobject.TagDO;
 import com.leo.service.TagService;
 
+import javax.annotation.Resource;
+
 /**
  * UserInfoServiceImpl Created by leo on 10/20/15.
  */
@@ -16,9 +18,10 @@ import com.leo.service.TagService;
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
 public class TagServiceImpl implements TagService {
 
-    @Autowired
+    @Resource
     private TagMapper tagMapper;
 
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false, rollbackFor = Exception.class)
     public TagDO get(Long id) {
         return tagMapper.findById(id);
     }
