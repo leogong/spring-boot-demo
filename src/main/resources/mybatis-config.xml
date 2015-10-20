@@ -17,9 +17,9 @@
         <setting name="jdbcTypeForNull" value="OTHER"/>
         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
     </settings>
-    <typeAliases>
-        <typeAlias alias="TagDO" type="com.leo.dataobject.TagDO"/>
-    </typeAliases>
+    <!--<typeAliases>-->
+        <!--<typeAlias alias="TagDO" type="com.leo.dataobject.TagDO"/>-->
+    <!--</typeAliases>-->
 
     <!--<mappers>-->
         <!--<mapper resource="mapper/TagMapper.xml"/>-->

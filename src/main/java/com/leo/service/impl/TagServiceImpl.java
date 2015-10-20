@@ -1,6 +1,7 @@
 package com.leo.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -8,8 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.leo.dao.TagMapper;
 import com.leo.dataobject.TagDO;
 import com.leo.service.TagService;
-
-import javax.annotation.Resource;
 
 /**
  * UserInfoServiceImpl Created by leo on 10/20/15.
