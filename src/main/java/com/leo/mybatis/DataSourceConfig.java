@@ -26,7 +26,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 @MapperScan(basePackages = "com.leo.dao")
 public class DataSourceConfig {
 
-    private final Logger log = LoggerFactory.getLogger(DataSourceConfig.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DataSourceConfig.class);
 
     @Bean
     @Primary
@@ -53,11 +53,5 @@ public class DataSourceConfig {
         sqlSessionFactory.setFailFast(true);
         return sqlSessionFactory.getObject();
     }
-
-    // @Bean
-    // public TagMapper tagMapper() throws Exception {
-    // SqlSessionTemplate sessionTemplate = new SqlSessionTemplate(sqlSessionFactory());
-    // return sessionTemplate.getMapper(TagMapper.class);
-    // }
 
 }
