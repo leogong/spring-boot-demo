@@ -20,7 +20,7 @@ public class TagServiceImpl implements TagService {
     @Resource
     private TagMapper tagMapper;
 
-    @Transactional(propagation = Propagation.REQUIRED, readOnly = false, rollbackFor = Exception.class)
+//    @Transactional(propagation = Propagation.REQUIRED, readOnly = false, rollbackFor = Exception.class)
     public TagDO get(Long id) {
         return tagMapper.findById(id);
     }

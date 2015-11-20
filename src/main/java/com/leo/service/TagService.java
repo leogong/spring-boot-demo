@@ -7,5 +7,5 @@ import com.leo.dataobject.TagDO;
  */
 public interface TagService {
 
-    public TagDO get(Long id);
+    TagDO get(Long id);
 }
