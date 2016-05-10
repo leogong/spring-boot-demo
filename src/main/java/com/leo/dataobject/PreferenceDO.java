@@ -42,11 +42,11 @@ public class PreferenceDO {
     private String  subject;
     private String  editorType;
 
-    public Long getoId() {
+    public String getoId() {
         return oId;
     }
 
-    public void setoId(Long oId) {
+    public void setoId(String oId) {
         this.oId = oId;
     }
 
